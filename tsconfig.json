@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "module": "UMD",
+        "jsx": "preserve",
+        "target": "ES5",
+        "outDir": "lib",
+        "declaration": true
+    },
+    "include": [
+        "src/file-manager-plugin.ts",
+    ]
+}
