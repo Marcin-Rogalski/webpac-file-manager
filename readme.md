@@ -2,10 +2,6 @@
 
 Simple plugin to manage files before and after webpack compilation.
 
-# Warining!
-
-Both code and readme are work in progress, there may be some issues.
-
 ## Installation
 
 Use npm like allways:
@@ -19,7 +15,7 @@ npm install @rpgalski/webpack-file-manager --save-dev
 First import plugin:
 
 ```typescript
-const WebpackFileManager = require("@rogalski/webpack-file-manager")
+const { FileManagerPlugin } = require("@rogalski/webpack-file-manager")
 ```
 
 Then add it to your configuration:
