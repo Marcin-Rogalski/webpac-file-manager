@@ -8,20 +8,10 @@ Both code and readme are work in progress, there may be some issues.
 
 ## Installation
 
-~~Use npm like allways:~~
-Since this plugin is not yet published on npm, you need to clone this repository, install it and build it. Than you can install it in your project by pointing it's root directory.
-
-In cloned directory:
+Use npm like allways:
 
 ```typescript
-npm install
-npm run build
-```
-
-In your project's root directory:
-
-```typescript
-npm install ../webpack-file-manager --save-dev
+npm install @rpgalski/webpack-file-manager --save-dev
 ```
 
 ## Usage

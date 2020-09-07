@@ -1,5 +1,5 @@
 {
-	"name": "webpack-file-manager",
+	"name": "@rogalski/webpack-file-manager",
 	"version": "1.0.0",
 	"description": "A file-manager plugin for Webpack. It let's you define create/copy/move/delete operations on files and folders that will be executed before or after webpack's compiler.",
 	"main": "lib/file-manager-plugin.js",
@@ -17,11 +17,23 @@
 		"Move",
 		"Plugin"
 	],
+	"directories": {
+		"lib": "lib",
+		"test": "tests"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Marcin-Rogalski/webpac-file-manager.git"
+	},
 	"author": {
 		"name": "Marcin Rogalski",
 		"email": "marcinrogalski@interia.eu"
 	},
 	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Marcin-Rogalski/webpac-file-manager/issues"
+	},
+	"homepage": "https://github.com/Marcin-Rogalski/webpac-file-manager#readme",
 	"devDependencies": {
 		"@types/node": "^14.6.1",
 		"jest": "^26.4.2",
