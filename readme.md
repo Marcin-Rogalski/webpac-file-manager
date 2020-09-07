@@ -7,7 +7,7 @@ Simple plugin to manage files before and after webpack compilation.
 Use npm like allways:
 
 ```typescript
-npm install @rpgalski/webpack-file-manager --save-dev
+npm install @rogalski/webpack-file-manager --save-dev
 ```
 
 ## Usage
