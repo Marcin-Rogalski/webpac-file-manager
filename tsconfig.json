@@ -4,13 +4,11 @@
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "moduleResolution": "node",
-        "module": "UMD",
+        "module": "commonjs",
         "jsx": "preserve",
         "target": "ES5",
-        "outDir": "lib",
-        "declaration": true
+        "declaration": true,
+        "outDir": "lib/"
     },
-    "include": [
-        "src/file-manager-plugin.ts",
-    ]
+    "include": ["src/file-manager-plugin.ts"]
 }

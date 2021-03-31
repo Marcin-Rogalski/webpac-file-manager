@@ -1,3 +1,11 @@
+/// <reference path="./services/create-file.ts" />
+/// <reference path="./services/create-folder.ts" />
+/// <reference path="./services/copy-file.ts" />
+/// <reference path="./services/copy-folder.ts" />
+/// <reference path="./services/delete-file.ts" />
+/// <reference path="./services/delete-folder.ts" />
+/// <reference path="./services/logger.ts" />
+
 import { lstatSync, existsSync } from 'fs'
 import { isRegExp, isString } from 'util'
 
@@ -24,10 +32,10 @@ export default class FileManager {
     create(target: string, options: CreateOptions): this
     create(target: string, content: string, options: CreateOptions): this
     create(target: string, contentOrOptions?: string | CreateOptions, options?: CreateOptions): this {
-        let content
+        let content: string
 
         if (contentOrOptions !== undefined) {
-            if (isString(contentOrOptions)) content = contentOrOptions
+            if (typeof contentOrOptions === 'string') content = contentOrOptions
             else options = contentOrOptions
         }
 

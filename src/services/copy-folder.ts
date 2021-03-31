@@ -1,3 +1,6 @@
+/// <reference path="./copy-file.ts" />
+/// <reference path="./create-folder.ts" />
+
 import { existsSync, readdirSync, lstatSync } from 'fs'
 import { join, resolve } from 'path'
 import { CopyOrMoveFolderOptions } from '../interfaces/copy-options'

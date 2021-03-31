@@ -1,6 +1,6 @@
 {
 	"name": "@rogalski/webpack-file-manager",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A file-manager plugin for Webpack. It let's you define create/copy/move/delete operations on files and folders that will be executed before or after webpack's compiler.",
 	"main": "lib/file-manager-plugin.js",
 	"typings": "lib/file-manager-plugin.d.ts",

@@ -1,3 +1,5 @@
+/// <reference path="../file-manager-plugin.ts" />
+
 import 'colors'
 import { Options } from '../file-manager-plugin'
 

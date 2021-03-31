@@ -1,3 +1,5 @@
+/// <reference path="./delete-file.ts" />
+
 import { existsSync, lstatSync, writeFileSync } from 'fs'
 import { resolve } from 'path'
 import { CreateFileOptions } from '../interfaces/create-options'

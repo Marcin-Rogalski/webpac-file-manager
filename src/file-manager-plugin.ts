@@ -1,3 +1,6 @@
+/// <reference path="./file-manager.ts" />
+/// <reference path="./services/logger.ts" />
+
 import _FileManager from './file-manager'
 import ExecuteOptions from './interfaces/execute-options'
 import CreateOptions from './interfaces/create-options'
@@ -78,7 +81,7 @@ export class FileManagerPlugin extends FileManager {
     private options: Options
     private actions: Array<Action>
 
-    constructor(options: Options) {
+    constructor(options?: Partial<Options>) {
         super()
 
         /**
@@ -93,14 +96,14 @@ export class FileManagerPlugin extends FileManager {
          * colors - allow coloring console logs
          */
         this.options = {
-            createDir: options?.createDir !== undefined ? options.createDir : true,
-            overwrite: options?.overwrite !== undefined ? options.overwrite : true,
-            increment: options?.increment,
-            execute: options?.execute !== undefined ? options.execute : 'BEFORE',
-            verbose: options?.verbose,
-            silent: options?.silent,
-            colors: options?.colors !== undefined ? options.colors : true,
-            throwError: options?.throwError !== undefined ? options.throwError : false,
+            createDir: options?.createDir ?? true,
+            overwrite: options?.overwrite ?? true,
+            increment: options?.increment ?? false,
+            execute: options?.execute ?? 'BEFORE',
+            verbose: options?.verbose ?? false,
+            silent: options?.silent ?? false,
+            colors: options?.colors ?? true,
+            throwError: options?.throwError ?? false,
         }
 
         this.logger = CreateLogger(this.options)
@@ -113,7 +116,7 @@ export class FileManagerPlugin extends FileManager {
      * 
      * @param compiler - Webpack compiler
      */
-    apply(compiler): void {
+    apply(compiler: any): void {
 
         /**
          * This is a function that will be invoked on compiler's hook.
@@ -229,3 +232,5 @@ export class FileManagerPlugin extends FileManager {
         return this
     }
 }
+
+export default FileManagerPlugin

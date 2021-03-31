@@ -1,3 +1,4 @@
+/// <reference path="./delete-file.ts" />
 
 import { existsSync, rmdirSync, readdirSync, lstatSync } from 'fs'
 import { join, resolve } from 'path'
