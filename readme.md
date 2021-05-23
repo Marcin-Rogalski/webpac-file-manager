@@ -19,7 +19,7 @@ First import plugin:
 const { FileManagerPlugin } = require("@rogalski/webpack-file-manager")
 
 // or using import
-import { FileManagerPlugin } from "@rogalski/webpack-file-manager"
+import FileManagerPlugin from "@rogalski/webpack-file-manager"
 ```
 
 Then add it to your configuration:
