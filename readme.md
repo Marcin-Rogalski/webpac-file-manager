@@ -15,7 +15,11 @@ npm install @rogalski/webpack-file-manager --save-dev
 First import plugin:
 
 ```typescript
+//using require
 const { FileManagerPlugin } = require("@rogalski/webpack-file-manager")
+
+// or using import
+import { FileManagerPlugin } from "@rogalski/webpack-file-manager"
 ```
 
 Then add it to your configuration:
